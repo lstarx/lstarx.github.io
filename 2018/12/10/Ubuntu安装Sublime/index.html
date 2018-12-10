@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="安装GPG密钥：wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -确保apt已设置为使用https源：sudo apt-get install apt-transport-https选择要使用的频道：稳定echo “deb https://download.sublimetext.co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu安装Sublime">
+<meta property="og:url" content="http://yoursite.com/2018/12/10/Ubuntu安装Sublime/index.html">
+<meta property="og:site_name" content="Lstarx">
+<meta property="og:description" content="安装GPG密钥：wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -确保apt已设置为使用https源：sudo apt-get install apt-transport-https选择要使用的频道：稳定echo “deb https://download.sublimetext.co">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-10T05:57:27.600Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu安装Sublime">
+<meta name="twitter:description" content="安装GPG密钥：wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -确保apt已设置为使用https源：sudo apt-get install apt-transport-https选择要使用的频道：稳定echo “deb https://download.sublimetext.co">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Ubuntu安装Sublime</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&text=Ubuntu安装Sublime"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&is_video=false&description=Ubuntu安装Sublime"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Ubuntu安装Sublime&body=Check out this article: http://yoursite.com/2018/12/10/Ubuntu安装Sublime/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&name=Ubuntu安装Sublime&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装GPG密钥："><span class="toc-number">1.</span> <span class="toc-text">安装GPG密钥：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#wget-qO-https-download-sublimetext-com-sublimehq-pub-gpg-sudo-apt-key-add"><span class="toc-number">1.1.</span> <span class="toc-text">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#确保apt已设置为使用https源："><span class="toc-number">2.</span> <span class="toc-text">确保apt已设置为使用https源：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-install-apt-transport-https"><span class="toc-number">2.1.</span> <span class="toc-text">sudo apt-get install apt-transport-https</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#选择要使用的频道："><span class="toc-number">3.</span> <span class="toc-text">选择要使用的频道：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#稳定"><span class="toc-number">4.</span> <span class="toc-text">稳定</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#echo-“deb-https-download-sublimetext-com-apt-stable-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><span class="toc-number">4.1.</span> <span class="toc-text">echo “deb https://download.sublimetext.com/ apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开发"><span class="toc-number">5.</span> <span class="toc-text">开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#echo-“deb-https-download-sublimetext-com-apt-dev-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><span class="toc-number">5.1.</span> <span class="toc-text">echo “deb https://download.sublimetext.com/ apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新apt源并安装Sublime-Text"><span class="toc-number">6.</span> <span class="toc-text">更新apt源并安装Sublime Text</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-update"><span class="toc-number">6.1.</span> <span class="toc-text">sudo apt-get update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-install-sublime-text"><span class="toc-number">6.2.</span> <span class="toc-text">sudo apt-get install sublime-text</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Ubuntu安装Sublime
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">Lstarx</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-12-10T05:56:08.000Z" itemprop="datePublished">2018-12-10</time>
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="安装GPG密钥："><a href="#安装GPG密钥：" class="headerlink" title="安装GPG密钥："></a>安装GPG密钥：</h1><h2 id="wget-qO-https-download-sublimetext-com-sublimehq-pub-gpg-sudo-apt-key-add"><a href="#wget-qO-https-download-sublimetext-com-sublimehq-pub-gpg-sudo-apt-key-add" class="headerlink" title="wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -"></a>wget -qO - <a href="https://download.sublimetext.com/sublimehq-pub.gpg" target="_blank" rel="noopener">https://download.sublimetext.com/sublimehq-pub.gpg</a> | sudo apt-key add -</h2><h1 id="确保apt已设置为使用https源："><a href="#确保apt已设置为使用https源：" class="headerlink" title="确保apt已设置为使用https源："></a>确保apt已设置为使用https源：</h1><h2 id="sudo-apt-get-install-apt-transport-https"><a href="#sudo-apt-get-install-apt-transport-https" class="headerlink" title="sudo apt-get install apt-transport-https"></a>sudo apt-get install apt-transport-https</h2><h1 id="选择要使用的频道："><a href="#选择要使用的频道：" class="headerlink" title="选择要使用的频道："></a>选择要使用的频道：</h1><h1 id="稳定"><a href="#稳定" class="headerlink" title="稳定"></a>稳定</h1><h2 id="echo-“deb-https-download-sublimetext-com-apt-stable-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><a href="#echo-“deb-https-download-sublimetext-com-apt-stable-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list" class="headerlink" title="echo “deb https://download.sublimetext.com/ apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list"></a>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</h2><h1 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h1><h2 id="echo-“deb-https-download-sublimetext-com-apt-dev-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><a href="#echo-“deb-https-download-sublimetext-com-apt-dev-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list" class="headerlink" title="echo “deb https://download.sublimetext.com/ apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list"></a>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</h2><h1 id="更新apt源并安装Sublime-Text"><a href="#更新apt源并安装Sublime-Text" class="headerlink" title="更新apt源并安装Sublime Text"></a>更新apt源并安装Sublime Text</h1><h2 id="sudo-apt-get-update"><a href="#sudo-apt-get-update" class="headerlink" title="sudo apt-get update"></a>sudo apt-get update</h2><h2 id="sudo-apt-get-install-sublime-text"><a href="#sudo-apt-get-install-sublime-text" class="headerlink" title="sudo apt-get install sublime-text"></a>sudo apt-get install sublime-text</h2>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装GPG密钥："><span class="toc-number">1.</span> <span class="toc-text">安装GPG密钥：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#wget-qO-https-download-sublimetext-com-sublimehq-pub-gpg-sudo-apt-key-add"><span class="toc-number">1.1.</span> <span class="toc-text">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#确保apt已设置为使用https源："><span class="toc-number">2.</span> <span class="toc-text">确保apt已设置为使用https源：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-install-apt-transport-https"><span class="toc-number">2.1.</span> <span class="toc-text">sudo apt-get install apt-transport-https</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#选择要使用的频道："><span class="toc-number">3.</span> <span class="toc-text">选择要使用的频道：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#稳定"><span class="toc-number">4.</span> <span class="toc-text">稳定</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#echo-“deb-https-download-sublimetext-com-apt-stable-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><span class="toc-number">4.1.</span> <span class="toc-text">echo “deb https://download.sublimetext.com/ apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开发"><span class="toc-number">5.</span> <span class="toc-text">开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#echo-“deb-https-download-sublimetext-com-apt-dev-“-sudo-tee-etc-apt-sources-list-d-sublime-text-list"><span class="toc-number">5.1.</span> <span class="toc-text">echo “deb https://download.sublimetext.com/ apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#更新apt源并安装Sublime-Text"><span class="toc-number">6.</span> <span class="toc-text">更新apt源并安装Sublime Text</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-update"><span class="toc-number">6.1.</span> <span class="toc-text">sudo apt-get update</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-apt-get-install-sublime-text"><span class="toc-number">6.2.</span> <span class="toc-text">sudo apt-get install sublime-text</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&text=Ubuntu安装Sublime"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&is_video=false&description=Ubuntu安装Sublime"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Ubuntu安装Sublime&body=Check out this article: http://yoursite.com/2018/12/10/Ubuntu安装Sublime/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&title=Ubuntu安装Sublime"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime/&name=Ubuntu安装Sublime&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Lstarx
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
