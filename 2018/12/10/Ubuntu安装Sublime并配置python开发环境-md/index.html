@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+    <meta name="description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下： 安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器  安装Sublime 安装GPG密钥： wget -qO - https://downlo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu安装Sublime并配置python开发环境.md">
 <meta property="og:url" content="http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/index.html">
 <meta property="og:site_name" content="Lstarx">
-<meta property="og:description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+<meta property="og:description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下： 安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器  安装Sublime 安装GPG密钥： wget -qO - https://downlo">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-11T13:30:36.244Z">
+<meta property="og:updated_time" content="2018-12-11T14:16:29.457Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu安装Sublime并配置python开发环境.md">
-<meta name="twitter:description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+<meta name="twitter:description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下： 安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器  安装Sublime 安装GPG密钥： wget -qO - https://downlo">
     
     
         
@@ -98,7 +98,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">1.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">2.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number">3.</span> <span class="toc-text">无法在输入中文？</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识点如下："><span class="toc-number">1.1.</span> <span class="toc-text">知识点如下：</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number"></span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number"></span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number"></span> <span class="toc-text">无法在输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number"></span> <span class="toc-text">安装插件，打造python专属编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件"><span class="toc-number">0.0.0.0.1.</span> <span class="toc-text">通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语："><span class="toc-number">1.</span> <span class="toc-text">结语：</span></a></li>
     </div>
   </span>
 </div>
@@ -134,30 +134,54 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="安装Sublime"><a href="#安装Sublime" class="headerlink" title="安装Sublime"></a>安装Sublime</h1><p>1 安装GPG密钥：</p>
-<blockquote>
+    <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>第一次用Git+hexo搭建博客，<br>markdown来编辑，由于markdown不怎么熟练，<br>排版不是很好，内容还是有的，大家多多包含，嘻嘻</p>
+<h3 id="知识点如下："><a href="#知识点如下：" class="headerlink" title="知识点如下："></a>知识点如下：</h3><ol>
+<li>安装Sublime；</li>
+<li>安装Package Control(必须)，并通过插件汉化；</li>
+<li>无法输入中文问题；</li>
+<li>Sublime插件，打造python专属编辑器</li>
+</ol>
+<h1 id="安装Sublime"><a href="#安装Sublime" class="headerlink" title="安装Sublime"></a>安装Sublime</h1><ol>
+<li>安装GPG密钥：<blockquote>
 <p>wget -qO - <a href="https://download.sublimetext.com/sublimehq-pub.gpg" target="_blank" rel="noopener">https://download.sublimetext.com/sublimehq-pub.gpg</a> | sudo apt-key add -</p>
 </blockquote>
-<p>2 确保apt已设置为使用https源：</p>
-<blockquote>
+</li>
+<li>确保apt已设置为使用https源：<blockquote>
 <p>sudo apt-get install apt-transport-https</p>
 </blockquote>
-<p>3 选择要使用的频道：<br>稳定</p>
-<blockquote>
-<p>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list<br>开发<br>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</p>
+</li>
+<li>选择要使用的频道：<blockquote>
+<p>稳定<br>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list<br>开发<br>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</p>
 </blockquote>
-<p>4 更新apt源并安装Sublime Text</p>
-<blockquote>
+</li>
+<li>更新apt源并安装Sublime Text<blockquote>
 <p>sudo apt-get update<br>sudo apt-get install sublime-text</p>
 </blockquote>
-<h1 id="英文不好嘛？那就汉化一下喽！"><a href="#英文不好嘛？那就汉化一下喽！" class="headerlink" title="英文不好嘛？那就汉化一下喽！"></a>英文不好嘛？那就汉化一下喽！</h1><p>1 <a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">Sublime Text安装Package Control</a><br>快捷键ctrl+` ， 然后粘贴如下代码到控制台并回车：<br>如无异常，重启一下就ok了……</p>
-<blockquote>
-<p>import urllib.request,os,hashlib; h = ‘6f4c264a24d933ce70df5dedcf1dcaee’ + ‘ebe013ee18cced0ef93d5f746d80ef60’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘<a href="http://packagecontrol.io/&#39;" target="_blank" rel="noopener">http://packagecontrol.io/&#39;</a> + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by) </p>
+</li>
+</ol>
+<h1 id="英文不好嘛？那就汉化一下喽！"><a href="#英文不好嘛？那就汉化一下喽！" class="headerlink" title="英文不好嘛？那就汉化一下喽！"></a>英文不好嘛？那就汉化一下喽！</h1><ol>
+<li><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">Sublime Text安装Package Control</a><br>快捷键ctrl+` ， 然后粘贴如下代码到控制台并回车：<br>如无异常，重启一下就ok了……<blockquote>
+<p>import urllib.request,os,hashlib; h = ‘6f4c264a24d933ce70df5dedcf1dcaee’ + ‘ebe013ee18cced0ef93d5f746d80ef60’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘<a href="http://packagecontrol.io/&#39;" target="_blank" rel="noopener">http://packagecontrol.io/&#39;</a> + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by)</p>
 </blockquote>
-<p>2 点击Preferences下的Package Control后选择install package选项<br>  期间可能会跳出一个弹窗，点确认就好.<br>3 然后Ctrl+Shift+P调出Install Package,<br>  搜索ChineseLocalization选项回车确认静等完成，然后重启Sublime就好了</p>
-<h1 id="无法在输入中文？"><a href="#无法在输入中文？" class="headerlink" title="无法在输入中文？"></a>无法在输入中文？</h1><blockquote>
-</blockquote>
-<p>git clone <a href="https://github.com/lyfeyaj/sublime-text-imfix.git" target="_blank" rel="noopener">https://github.com/lyfeyaj/sublime-text-imfix.git</a><br>cd sublime-text-imfix<br>./sublime-imfix<br>完成，重新打开你的sublime窗口，切换中文输入法，就可以输入中文了。</p>
+</li>
+<li>点击Preferences下的Package Control后选择install package选项<br>期间可能会跳出一个弹窗，点确认就好.<br><br></li>
+<li>然后Ctrl+Shift+P调出Install Package,<br>搜索ChineseLocalization选项回车确认静等完成，然后重启Sublime就好了<br><br><br><br></li>
+</ol>
+<hr>
+<h1 id="无法在输入中文？"><a href="#无法在输入中文？" class="headerlink" title="无法在输入中文？"></a>无法在输入中文？</h1><ol>
+<li>git clone <a href="https://github.com/lyfeyaj/sublime-text-imfix.git" target="_blank" rel="noopener">https://github.com/lyfeyaj/sublime-text-imfix.git</a></li>
+<li>cd sublime-text-imfix</li>
+<li>./sublime-imfix<br>!!! 完成，重新打开你的sublime窗口，切换中文输入法，就可以输入中文了。<br><br><h1 id="安装插件，打造python专属编辑器"><a href="#安装插件，打造python专属编辑器" class="headerlink" title="安装插件，打造python专属编辑器"></a>安装插件，打造python专属编辑器</h1><h6 id="通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件"><a href="#通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件" class="headerlink" title="通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件"></a>通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件</h6>安装方法么？<br>Ctrl+Shift+P调出Install Package,<br>插件如下：</li>
+<li>SideBarEnhancements: 扩展了侧边栏中菜单选项的数量，从而提升你的工作效率。</li>
+<li>SublimeTmpl：新建文件模板插件，可以支持多种语言例如Python、PHP等，在settings-user中设置上自己的信息。</li>
+<li>Terminal：打开一个命令窗口，用于各种命令操作</li>
+<li>AutoPep8：python开发规范pep8 </li>
+<li>Anaconda：自动匹配关键字等实用功能，有效提高开发效率 </li>
+<li>SublimeREPL：直接运行当前文件，可以方便调试，与Terminal可联合使用。<br><br><br>参考：</li>
+</ol>
+<hr>
+<p><a href="https://www.jianshu.com/p/38770ec478be" target="_blank" rel="noopener">输入中文</a><br><a href="https://blog.csdn.net/Aaroun/article/details/78263539" target="_blank" rel="noopener">Sublime常用插件</a><br><br></p>
+<h2 id="结语："><a href="#结语：" class="headerlink" title="结语："></a>结语：</h2><p>第一次写博客，<br>建博客的初衷也是锻炼自己的文档编辑能力和语言组织能力，以及总结能力，不管有没有人看，就当写给自己的好了，相信我一定可以写的越来越好的！！！</p>
 
   </div>
 </article>
@@ -183,7 +207,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">1.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">2.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number">3.</span> <span class="toc-text">无法在输入中文？</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识点如下："><span class="toc-number">1.1.</span> <span class="toc-text">知识点如下：</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number"></span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number"></span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number"></span> <span class="toc-text">无法在输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number"></span> <span class="toc-text">安装插件，打造python专属编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件"><span class="toc-number">0.0.0.0.1.</span> <span class="toc-text">通过插件，我们可以很好的提高开发效率，所以我在此例举几个非常不错的插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语："><span class="toc-number">1.</span> <span class="toc-text">结语：</span></a></li>
     </div>
 
     <div id="share-footer" style="display: none">
