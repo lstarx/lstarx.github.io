@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu安装Sublime并配置python开发环境.md">
+<meta property="og:url" content="http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/index.html">
+<meta property="og:site_name" content="Lstarx">
+<meta property="og:description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-11T13:30:36.244Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu安装Sublime并配置python开发环境.md">
+<meta name="twitter:description" content="安装Sublime1 安装GPG密钥：  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  2 确保apt已设置为使用https源：  sudo apt-get install apt-transport-https  3 选择要使用的频道：稳定  echo “deb https:">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Ubuntu安装Sublime并配置python开发环境.md</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&text=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&is_video=false&description=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Ubuntu安装Sublime并配置python开发环境.md&body=Check out this article: http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&name=Ubuntu安装Sublime并配置python开发环境.md&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">1.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">2.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number">3.</span> <span class="toc-text">无法在输入中文？</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Ubuntu安装Sublime并配置python开发环境.md
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">Lstarx</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-12-10T14:44:02.000Z" itemprop="datePublished">2018-12-10</time>
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="安装Sublime"><a href="#安装Sublime" class="headerlink" title="安装Sublime"></a>安装Sublime</h1><p>1 安装GPG密钥：</p>
+<blockquote>
+<p>wget -qO - <a href="https://download.sublimetext.com/sublimehq-pub.gpg" target="_blank" rel="noopener">https://download.sublimetext.com/sublimehq-pub.gpg</a> | sudo apt-key add -</p>
+</blockquote>
+<p>2 确保apt已设置为使用https源：</p>
+<blockquote>
+<p>sudo apt-get install apt-transport-https</p>
+</blockquote>
+<p>3 选择要使用的频道：<br>稳定</p>
+<blockquote>
+<p>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/stable/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list<br>开发<br>echo “deb <a href="https://download.sublimetext.com/" target="_blank" rel="noopener">https://download.sublimetext.com/</a> apt/dev/“ | sudo tee /etc/apt/sources.list.d/sublime-text.list</p>
+</blockquote>
+<p>4 更新apt源并安装Sublime Text</p>
+<blockquote>
+<p>sudo apt-get update<br>sudo apt-get install sublime-text</p>
+</blockquote>
+<h1 id="英文不好嘛？那就汉化一下喽！"><a href="#英文不好嘛？那就汉化一下喽！" class="headerlink" title="英文不好嘛？那就汉化一下喽！"></a>英文不好嘛？那就汉化一下喽！</h1><p>1 <a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">Sublime Text安装Package Control</a><br>快捷键ctrl+` ， 然后粘贴如下代码到控制台并回车：<br>如无异常，重启一下就ok了……</p>
+<blockquote>
+<p>import urllib.request,os,hashlib; h = ‘6f4c264a24d933ce70df5dedcf1dcaee’ + ‘ebe013ee18cced0ef93d5f746d80ef60’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘<a href="http://packagecontrol.io/&#39;" target="_blank" rel="noopener">http://packagecontrol.io/&#39;</a> + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by) </p>
+</blockquote>
+<p>2 点击Preferences下的Package Control后选择install package选项<br>  期间可能会跳出一个弹窗，点确认就好.<br>3 然后Ctrl+Shift+P调出Install Package,<br>  搜索ChineseLocalization选项回车确认静等完成，然后重启Sublime就好了</p>
+<h1 id="无法在输入中文？"><a href="#无法在输入中文？" class="headerlink" title="无法在输入中文？"></a>无法在输入中文？</h1><blockquote>
+</blockquote>
+<p>git clone <a href="https://github.com/lyfeyaj/sublime-text-imfix.git" target="_blank" rel="noopener">https://github.com/lyfeyaj/sublime-text-imfix.git</a><br>cd sublime-text-imfix<br>./sublime-imfix<br>完成，重新打开你的sublime窗口，切换中文输入法，就可以输入中文了。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">1.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">2.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法在输入中文？"><span class="toc-number">3.</span> <span class="toc-text">无法在输入中文？</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&text=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&is_video=false&description=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Ubuntu安装Sublime并配置python开发环境.md&body=Check out this article: http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&title=Ubuntu安装Sublime并配置python开发环境.md"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/12/10/Ubuntu安装Sublime并配置python开发环境-md/&name=Ubuntu安装Sublime并配置python开发环境.md&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Lstarx
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
