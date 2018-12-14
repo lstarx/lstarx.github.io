@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Ubuntu安装Sublime并配置python开发环境标签（空格分隔）： Ubuntu code  前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造pyth">
-<meta name="keywords" content="Ubuntu code">
+    <meta name="description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器 安装Sublime   安装Sublime 安装GPG密钥：wget -qO - ht">
+<meta name="keywords" content="Sublime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu安装Sublime并配置python开发环境">
 <meta property="og:url" content="http://yoursite.com/2018/12/14/Ubuntu安装Sublime并配置python开发环境/index.html">
 <meta property="og:site_name" content="Lstarx">
-<meta property="og:description" content="Ubuntu安装Sublime并配置python开发环境标签（空格分隔）： Ubuntu code  前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造pyth">
+<meta property="og:description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器 安装Sublime   安装Sublime 安装GPG密钥：wget -qO - ht">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-14T08:35:15.785Z">
+<meta property="og:updated_time" content="2018-12-14T08:42:01.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu安装Sublime并配置python开发环境">
-<meta name="twitter:description" content="Ubuntu安装Sublime并配置python开发环境标签（空格分隔）： Ubuntu code  前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造pyth">
+<meta name="twitter:description" content="前言：第一次用Git+hexo搭建博客，markdown来编辑，由于markdown不怎么熟练，排版不是很好，内容还是有的，大家多多包含，嘻嘻 知识点如下：   安装Sublime； 安装Package Control(必须)，并通过插件汉化； 无法输入中文问题； Sublime插件，打造python专属编辑器 安装Sublime   安装Sublime 安装GPG密钥：wget -qO - ht">
     
     
         
@@ -99,7 +99,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu安装Sublime并配置python开发环境"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu安装Sublime并配置python开发环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前言："><span class="toc-number">2.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">3.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">4.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法输入中文？"><span class="toc-number">5.</span> <span class="toc-text">无法输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number">6.</span> <span class="toc-text">安装插件，打造python专属编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考："><span class="toc-number">7.</span> <span class="toc-text">参考：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语："><span class="toc-number">8.</span> <span class="toc-text">结语：</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">2.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">3.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法输入中文？"><span class="toc-number">4.</span> <span class="toc-text">无法输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number">5.</span> <span class="toc-text">安装插件，打造python专属编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考："><span class="toc-number">6.</span> <span class="toc-text">参考：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语："><span class="toc-number">7.</span> <span class="toc-text">结语：</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -122,7 +122,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2018-12-14T08:33:57.000Z" itemprop="datePublished">2018-12-14</time>
+        <time datetime="2018-12-14T08:40:36.000Z" itemprop="datePublished">2018-12-14</time>
     </div>
 
 
@@ -131,7 +131,7 @@
       
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/Ubuntu-code/">Ubuntu code</a>
+        <a class="tag-link" href="/tags/Sublime/">Sublime</a>
     </div>
 
 
@@ -140,9 +140,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="Ubuntu安装Sublime并配置python开发环境"><a href="#Ubuntu安装Sublime并配置python开发环境" class="headerlink" title="Ubuntu安装Sublime并配置python开发环境"></a>Ubuntu安装Sublime并配置python开发环境</h1><p>标签（空格分隔）： Ubuntu code</p>
-<hr>
-<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>第一次用Git+hexo搭建博客，<br>markdown来编辑，由于markdown不怎么熟练，<br>排版不是很好，内容还是有的，大家多多包含，嘻嘻</p>
+    <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>第一次用Git+hexo搭建博客，<br>markdown来编辑，由于markdown不怎么熟练，<br>排版不是很好，内容还是有的，大家多多包含，嘻嘻</p>
 <p><strong>知识点如下：</strong></p>
 <blockquote>
 <ul>
@@ -209,7 +207,7 @@ sudo apt-get install sublime-text</code></li>
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu安装Sublime并配置python开发环境"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu安装Sublime并配置python开发环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前言："><span class="toc-number">2.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">3.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">4.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法输入中文？"><span class="toc-number">5.</span> <span class="toc-text">无法输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number">6.</span> <span class="toc-text">安装插件，打造python专属编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考："><span class="toc-number">7.</span> <span class="toc-text">参考：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语："><span class="toc-number">8.</span> <span class="toc-text">结语：</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Sublime"><span class="toc-number">2.</span> <span class="toc-text">安装Sublime</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#英文不好嘛？那就汉化一下喽！"><span class="toc-number">3.</span> <span class="toc-text">英文不好嘛？那就汉化一下喽！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无法输入中文？"><span class="toc-number">4.</span> <span class="toc-text">无法输入中文？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装插件，打造python专属编辑器"><span class="toc-number">5.</span> <span class="toc-text">安装插件，打造python专属编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考："><span class="toc-number">6.</span> <span class="toc-text">参考：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结语："><span class="toc-number">7.</span> <span class="toc-text">结语：</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
